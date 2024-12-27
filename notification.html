@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Form</title>
+    <style>
+        /* General reset and body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .forms {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: antiquewhite;
+            width: 100%; /* Makes it 100% width on small screens */
+            max-width: 400px; /* Limits max width */
+            margin-left: auto;
+            margin-right: auto; /* Centers the form */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: rgb(7, 219, 134);
+            border: none;
+            width: 100px; /* Makes button wider */
+            height: 40px;
+            font-size: 15px;
+            color: aliceblue;
+            cursor: pointer;
+            border-radius: 5px; /* Adds rounded corners */
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        input {
+            height: 30px;
+            width: 80%; /* Makes input field more flexible */
+            max-width: 300px; /* Limits input width */
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Adds rounded corners */
+        }
+       
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .forms {
+                width: 90%; /* Makes the form take 90% width on small screens */
+                padding: 15px;
+            }
+
+            button {
+                width: 80px; /* Slightly smaller button on mobile */
+            }
+
+            input {
+                width: 90%; /* Makes the input fill most of the screen */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="forms">
+        <h2>កន្លែងសរសេរសារជូនដំណឹងដល់និស្សិត</h2>
+        <input type="text" id="A" placeholder="write here for notification"><br><br>
+        <button onclick="Enter()">Submit</button>
+    </div>
+
+    <script>
+        function Enter() {
+            const A = document.getElementById("A").value;
+            alert(A); // Directly display the alert with the entered value
+        }
+    </script>
+</body>
+</html>
